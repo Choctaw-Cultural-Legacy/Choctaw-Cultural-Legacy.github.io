@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ page.title }}</title>
+    {% if page.title %}<title>Choctaw Cultural Legacy | {{ page.title }}</title>
+    {% else %}<title>Choctaw Cultural Legacy</title>
+    {% endif %}
     <link href="/assets/css/main.css" rel="stylesheet">
   </head>
   <body>
