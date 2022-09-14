@@ -53,3 +53,16 @@
 @import "utilities/api";
 // scss-docs-end import-stack
 
+body {
+    background-color: #E8CAB5;
+}
+
+.bg-maroon {
+    background-color: #590D13;
+}
+
+.bg-jumbotron {
+    background-image: url("/assets/img/DRC_Marker.webp");
+    background-size: cover;
+    background-position: center center;
+}
