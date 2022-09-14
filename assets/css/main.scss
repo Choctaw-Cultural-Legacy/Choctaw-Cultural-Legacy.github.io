@@ -53,6 +53,12 @@
 @import "utilities/api";
 // scss-docs-end import-stack
 
+.hayate {
+    font-family: hayate, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 body {
     background-color: #E8CAB5;
 }
@@ -63,6 +69,6 @@ body {
 
 .bg-jumbotron {
     background-image: url("/assets/img/DRC_Marker.webp");
-    background-size: cover;
-    background-position: center center;
+    background-size: 110%;
+    background-position: top center;
 }
