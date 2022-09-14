@@ -6,4 +6,4 @@ title: Home
 
 Welcome to the homepage.
 
-{% include carousel.html %}
+
