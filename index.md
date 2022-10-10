@@ -6,3 +6,5 @@ title: Home
 {% include jumbotron.html %}
 
 Hello, my name is Ty
+
+{% include ty.html %}
