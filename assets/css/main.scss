@@ -75,11 +75,13 @@ body {
     background-position: top center;
 }
 
-.bi {
+.front-links > .col > a > .card > .bi {
     font-size: 5rem;
-}
-
-.front-links > .col > .card {
-    background: none;
-    border: none;
-}
+ }
+ 
+ .front-links > .col > a > .card {
+     background: none;
+     border: none;
+     color: black;
+     --bs-link-color: black;
+ }
