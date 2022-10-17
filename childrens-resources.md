@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Childrens Activities
-permalink: /childrens-activities/
+title: Childrens Resources
+permalink: /childrens-resources/
 ---
 
 # Title of page

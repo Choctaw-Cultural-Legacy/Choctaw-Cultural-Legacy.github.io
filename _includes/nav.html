@@ -1,45 +1,36 @@
-<!-- <nav>
-    <a href="/" {% if page.url == "/" %}style="color: red;"{% endif %}>
-      Home
-    </a>
-    <a href="/cultural-features/" {% if page.url == "/cultural-features/" %}style="color: red;"{% endif %}>
-      Cultural Video Features
-    </a>
-  </nav> -->
+<nav class="navbar navbar-expand-md navbar-dark bg-maroon" aria-label="Eighth navbar example">
+  <div class="container">
+    <a class="navbar-brand" href="/">Choctaw Cultural Legacy</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <nav class="navbar navbar-expand-md navbar-dark bg-maroon" aria-label="Eighth navbar example">
-    <div class="container">
-      <a class="navbar-brand" href="/">Choctaw Cultural Legacy</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse justify-content-end">
-        <ul class="navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link {% if page.url == "/" %}active{% endif %}" aria-current="page" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link {% if page.url == "/cultural-features/"%}active{% endif %}" href="/cultural-features/">Cultural Video Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link {% if page.url == "/childrens-activities/"%}active{% endif %}" href="/childrens-activities/">Childrens Resources</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Meet Our Elders</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Additional Resources</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Image Gallery</a></li>
-              <li><a class="dropdown-item" href="#">Articles & Publications</a></li>
-              <li><a class="dropdown-item" href="#">Audio Resources</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Links</a>
-          </li>
-        </ul>
-      </div>
+    <div class="collapse navbar-collapse justify-content-end">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link {% if page.url == "/" %}active{% endif %}" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if page.url == "/cultural-features/"%}active{% endif %}" href="/cultural-features/">Cultural Video Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if page.url == "/childrens-resources/"%}active{% endif %}" href="/childrens-resources/">Childrens Resources</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Meet Our Elders</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Additional Resources</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Image Gallery</a></li>
+            <li><a class="dropdown-item" href="#">Articles & Publications</a></li>
+            <li><a class="dropdown-item" href="#">Audio Resources</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Links</a>
+        </li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
