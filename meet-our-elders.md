@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Cultural Video Features
-permalink: /cultural-features/
+title: Meet Our Elders
+permalink: /meet-our-elders/
 ---
 
 # {{ page.title }}

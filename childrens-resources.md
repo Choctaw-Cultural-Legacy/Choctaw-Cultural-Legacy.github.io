@@ -4,7 +4,7 @@ title: Childrens Resources
 permalink: /childrens-resources/
 ---
 
-# Title of page
+# {{ page.title }}
 
 First paragraph
 

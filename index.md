@@ -9,4 +9,8 @@ title: Home
 
 ### The Mississippi Choctaws of today carry on the traditions left to them by their ancesters.  This site is dedicated to the preservation and prepetuity of the lifeways of the Mississippi Choctaws.  Our website features a series of videos highlighting cultural topics, a gallery of Mississippi Choctaw images, media resources, and project partner links. We invite you to explore our site and learn more about the cultural life ways of the Mississippi Band of Choctaw Indians.
 
+<hr class = "border border-dark border-2 opacity-100">
+
 {% include front-links.html %}
+
+[^*] Choctaw Cultural Legacy is a non-profit educational website of the Mississippi Band of Choctaw Indians for the purpose of providing an educational glimpse into the Choctaw culture.  Many of the items found on our website are used by permission from other organizations, and are for viewing only.  Usage of items is strictly prohibited, unless permission is explicitly given by the DCI-Special Projects / Media Program or the item’s source of origin.
