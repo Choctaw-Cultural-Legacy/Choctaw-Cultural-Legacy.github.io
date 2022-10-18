@@ -1,4 +1,4 @@
-{% assign my_int = 0 %}
+{% assign my_int = 1 %}
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 image-gallery">
   {% for card in site.data.image-gallery.cards %}
   <div class="col">
@@ -14,11 +14,14 @@
           <img src="/assets/img/gallery/{{ card.image }}.webp" loading="lazy" class="img-fluid" alt="{{ card.summary }}">
         </div>
         <div class="modal-footer">
-          <p>{{ card.summary | append: ". Courtesy of Tribal Archives - Chahta Immi Cultural Center"}}</p>
-          <p>{{ my_int | plus: 1 }} / {{ site.data.image-gallery.cards.size }}</p>
+          <div class="row">
+            <div class="col-10">{{ card.summary }}. Courtesy of {{ card.courtesy }}</div>
+            <div class="col-2">{{ my_int }} / {{ site.data.image-gallery.cards.size }}</div>
+          </div>
         </div>
       </div>
     </div>
   </div>
+  {% assign my_int = my_int | plus: 1 %}
   {% endfor %}
 </div>
