@@ -14,7 +14,7 @@
         </div>
         <div class="modal-footer">
           <div class="row">
-            <div class="col-10">{{ card.summary }}. Courtesy of {{ card.courtesy }}</div>
+            <div class="col-10">{{ card.summary }}. Courtesy of {{ card.courtesy | default: "Tribal Archives - Chahta Immi Cultural Center" }}</div>
             <div class="col-2">{{ card.index | plus: 1 }} / {{ site.data.image-gallery.cards.size }}</div>
           </div>
         </div>
