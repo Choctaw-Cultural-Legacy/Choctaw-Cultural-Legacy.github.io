@@ -1,7 +1,23 @@
-<div class="row row-cols-1 row-cols-md-2 g-4">
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 image-gallery">
   {% for card in site.data.image-gallery.cards %}
-  {{ card.summary }}
-  {{ card.summary | append: ". Courtesy of Tribal Archives - Chahta Immi Cultural Center"}}
-  {{ card.number }} / {{ site.data.image-gallery.cards.size }}
+  <div class="col">
+    <img src="/assets/img/gallery/{{ card.image }}.webp" class="card-img-top" alt="{{ image.summary }}" data-bs-toggle="modal" data-bs-target="#modal{{ card.number }}">
+    <div class="card-body bg-maroon text-white">
+      <h5 class="card-text">{{ card.summary }}</h5>
+    </div>
+  </div>
+  <div class="modal fade" id="modal{{ card.number }}" tabindex="-1" aria-labelledby="modal{{ card.number }}Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <img src="/assets/img/gallery/{{ card.image }}.webp" class="img-fluid" alt="{{ card.summary }}">
+        </div>
+        <div class="modal-footer">
+          <p>{{ card.summary | append: ". Courtesy of Tribal Archives - Chahta Immi Cultural Center"}}</p>
+          <p>{{ card.number }} / {{ site.data.image-gallery.cards.size }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
   {% endfor %}
 </div>
