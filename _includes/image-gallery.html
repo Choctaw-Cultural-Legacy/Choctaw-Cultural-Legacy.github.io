@@ -6,7 +6,7 @@
       <h5 class="card-text">{{ card.summary }}</h5>
     </div>
   </div>
-  <div class="modal fade" id="modal{{ card.number }}" tabindex="-1" aria-labelledby="modal{{ card.number }}Label" aria-hidden="true">
+  <div class="modal fade" id="modal{{ card.index | plus: 1 }}" tabindex="-1" aria-labelledby="modal{{ card.index | plus: 1 }}Label" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-body">
