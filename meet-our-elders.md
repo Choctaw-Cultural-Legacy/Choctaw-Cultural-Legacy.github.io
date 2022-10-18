@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Our Elders
-permalink: /our-elders/
+title: Meet Our Elders
+permalink: /meet-our-elders/
 ---
 
 # {{ page.title }}
