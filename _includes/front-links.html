@@ -1,12 +1,12 @@
 <div class="row row-cols-1 row-cols-md-3 g-4 front-links">
-  {% for card in site.data.front-links.cards %}
+  {% for link in site.data.front-links.links %}
     <div class="col">
-      <a href="{{ card.link | relative_path }}">
-        <div class="card h-100 text-center">
-          <i class="bi bi-{{ card.icon }} card-img-top"></i>
-          <div class="card-body">
-            <h5 class="card-title">{{ card.title }}</h5>
-            <p class="card-text">{{ card.summary }}</p>
+      <a href="{{ link.link | relative_path }}">
+        <div class="link h-100 text-center">
+          <i class="bi bi-{{ link.icon }} link-img-top"></i>
+          <div class="link-body">
+            <h5 class="link-title">{{ link.title }}</h5>
+            <p class="link-text">{{ link.summary }}</p>
           </div>
         </div>
       </a>
