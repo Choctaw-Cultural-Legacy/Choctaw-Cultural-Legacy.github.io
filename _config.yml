@@ -1,6 +1,2 @@
 sass:
   style: compressed # possible values: nested expanded compact compressed
-breadcrumbs:
-  root:
-    hide: false # show breadcrumbs on root/home page
-    image: false # show image or title text
