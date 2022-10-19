@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Video Features
-permalink: /media/video-features/
+permalink: /video-features/
 ---
 
 # {{ page.title }}
