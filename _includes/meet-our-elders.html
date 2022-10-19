@@ -1,5 +1,5 @@
 {% assign my_int = 0 %}
-<div class="row row-cols-1 row-cols-md-2 g-4">
+<div class="row row-cols-1 row-cols-lg-2 g-4">
   {% for elder in site.data.meet-our-elders.elders %}
   {% assign my_int = my_int | plus: 1 %}
   <div class="col">
@@ -10,7 +10,7 @@
           <div class="accordion-item">
             <h2 class="accordion-header" id="heading{{ my_int }}">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ my_int }}" aria-expanded="true" aria-controls="collapse{{ my_int }}">
-                {{ elder.name }} {% if elder.years %}({{ elder.years }}){% endif %}
+                <h4>{{ elder.name }} {% if elder.years %}({{ elder.years }}){% endif %}</h4>
               </button>
             </h2>
             <div id="collapse{{ my_int }}" class="accordion-collapse collapse" aria-labelledby="heading{{ my_int }}" data-bs-parent="#accordionExample">
