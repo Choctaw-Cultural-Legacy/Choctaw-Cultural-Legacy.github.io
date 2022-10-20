@@ -1,11 +1,12 @@
 {% assign my_int = 0 %}
 <div class="row row-cols-1 row-cols-lg-2 g-4">
-  {% assign elders_by_name = site.data.meet-our-elders.elders | sort: "name" %}
-  {% for elder in elders_by_name %}
+  {% assign elders_by_first_name = site.data.meet-our-elders.elders | sort: "firstname" %}
+  {% assign elders_by_last_name = elders_by_first_name | sort: "lastname" %}
+  {% for elder in elders_by_last_name %}
   {% assign my_int = my_int | plus: 1 %}
   <div class="col">
     <div class="card">
-      <img src="/assets/img/elders/{{ elder.image }}.webp" class="card-img-top" alt="{{ elder.name }}">
+      <img src="/assets/img/elders/{{ elder.image }}.webp" class="card-img-top" alt="{{ elder.firstname }} {{ elder.lastname }}">
       <div class="card-footer">
         <div class="accordion accordion-flush" id="accordion{{ my_int }}">
           <div class="accordion-item">
