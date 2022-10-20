@@ -1,23 +1,23 @@
 {% assign my_int = 0 %}
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 image-gallery">
-  {% for card in site.data.image-gallery.cards %}
+  {% for image in site.data.image-gallery.images %}
   {% assign my_int = my_int | plus: 1 %}
   <div class="col">
-    <img src="/assets/img/gallery/{{ card.image }}.webp" loading="lazy" class="card-img-top" alt="{{ card.summary }}" data-bs-toggle="modal" data-bs-target="#modal{{ my_int }}">
+    <img src="/assets/img/gallery/{{ image.image }}.webp" loading="lazy" class="card-img-top" alt="{{ image.summary }}" data-bs-toggle="modal" data-bs-target="#modal{{ my_int }}">
     <div class="card-body">
-      <p class="card-text">{{ card.summary }}</p>
+      <p class="card-text">{{ image.summary }}</p>
     </div>
   </div>
   <div class="modal fade" id="modal{{ my_int }}" tabindex="-1" aria-labelledby="modal{{ my_int }}Label" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-body">
-          <img src="/assets/img/gallery/{{ card.image }}.webp" loading="lazy" class="img-fluid" alt="{{ card.summary }}">
+          <img src="/assets/img/gallery/{{ image.image }}.webp" loading="lazy" class="img-fluid" alt="{{ image.summary }}">
         </div>
         <div class="modal-footer">
           <div class="row">
-            <div class="col-10">{{ card.summary }}. Courtesy of {{ card.courtesy | default: "Tribal Archives - Chahta Immi Cultural Center" }}</div>
-            <div class="col-2">{{ my_int }} / {{ site.data.image-gallery.cards.size }}</div>
+            <div class="col-10">{{ image.summary }}. Courtesy of {{ image.courtesy | default: "Tribal Archives - Chahta Immi Cultural Center" }}</div>
+            <div class="col-2">{{ my_int }} / {{ site.data.image-gallery.images.size }}</div>
           </div>
         </div>
       </div>
