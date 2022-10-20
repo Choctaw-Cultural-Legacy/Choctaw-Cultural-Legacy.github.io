@@ -1,0 +1,17 @@
+{% for audio in site.data.audio-recordings.audios %}
+<div class="feature mb-3 bg-maroon text-white">
+  <div class="row g-0">
+    <div class="col-xl-6">
+      <div class="ratio ratio-16x9 rounded-start">
+        <iframe src="https://www.youtube.com/embed/{{ audio.youtube }}" title="{{ audio.title }}" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="col-xl-6 p-4">
+      <div class="feature-body">
+        <h4 class="feature-title">{{ audio.title }}</h4>
+        <p class="feature-text">{{ audio.description }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}
