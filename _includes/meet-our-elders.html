@@ -1,6 +1,7 @@
 {% assign my_int = 0 %}
 <div class="row row-cols-1 row-cols-lg-2 g-4">
-  {% for elder in site.data.meet-our-elders.elders %}
+  {% assign elders_by_name = site.data.meet-our-elders.elders | sort: "name" %}
+  {% for elder in elders_by_name %}
   {% assign my_int = my_int | plus: 1 %}
   <div class="col">
     <div class="card">
