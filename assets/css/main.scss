@@ -57,8 +57,6 @@
     font-family: hayate, sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: #590D13;
-    text-shadow: 3px 3px 6px #fff;
 }
 
 body {
@@ -73,6 +71,11 @@ body {
     background-image: url("/assets/img/DRC_Marker.webp");
     background-size: cover;
     background-position: top center;
+    font-family: hayate, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #590D13;
+    text-shadow: 3px 3px 6px #fff;
 }
 
 .front-links > .col > a > .card > .bi {
@@ -105,13 +108,4 @@ body {
     background: rgba(0, 0, 0, 0.5);
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-}
-
-.navbar-brand {
-    font-size: 1.6rem;
-    font-family: hayate, sans-serif;
-}
-
-h5.link-title {
-    font-family: hayate, sans-serif;
 }
