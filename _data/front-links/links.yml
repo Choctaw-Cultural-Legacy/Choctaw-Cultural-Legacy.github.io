@@ -33,10 +33,10 @@
   summary: 
   link: /meet-our-elders/
 
-- title: Kids Games
-  icon: joystick
-  summary: 
-  link: /meet-our-elders/
+# - title: Kids Games
+#  icon: joystick
+#  summary: 
+#  link: /meet-our-elders/
 
 - title: Event Calendar
   icon: calendar-week
