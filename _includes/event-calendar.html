@@ -1,6 +1,6 @@
 {% for event in site.data.event-calendar.events %}
-<div class="card mb-3" style="max-width: 540px;">
-  <div class="card-header">{{ event.date }}</div>
+<div class="card mb-3">
+  <h2 class="card-header">{{ event.date }}</h2>
   <div class="row g-0">
     <div class="col-md-8">
       <div class="card-body">
@@ -12,7 +12,7 @@
       </div>
     </div>
     <div class="col-md-4">
-      <img src="{{ event.image }}" class="img-fluid rounded-end" alt="{{ event.title }}">
+      <img src="/assets/img/events/{{ event.image }}.webp" class="img-fluid rounded-end" alt="{{ event.title }}">
     </div>
   </div>
 </div>
