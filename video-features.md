@@ -5,6 +5,7 @@ permalink: /video-features/
 ---
 
 # {{ page.title }}
+{: .hayate}
 
 ### Video features highlight aspects of Choctaw culture and heritage.
 

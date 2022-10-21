@@ -5,5 +5,6 @@ permalink: /image-gallery/
 ---
 
 # {{ page.title }}
+{: .hayate}
 
 {% include image-gallery.html %}
