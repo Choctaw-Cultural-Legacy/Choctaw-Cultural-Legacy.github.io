@@ -18,14 +18,29 @@
   summary: The image gallery holds a collection of images pertaining to Choctaw history and culture. We invite you to browse through these photographs and to take a glimpse of the lifeways of the Choctaw people.
   link: /image-gallery/
 
-- title: Kids Resources
-  icon: pencil-square
+- title: Kids Videos
+  icon: person-video
   summary: Click the icon above to find a mix of educational videos, stories, and activity booklets intended for children.
   link: /meet-our-elders/
 
-- title: Articles & Publications
-  icon: journal-text
-  summary: Click on the icon to view past publications, stories, and articles concerning Choctaw history and culture.
+- title: Kids Activities
+  icon: pencil-square
+  summary: 
+  link: /meet-our-elders/
+
+- title: Kids Stories
+  icon: book
+  summary: 
+  link: /meet-our-elders/
+
+- title: Kids Games
+  icon: joystick
+  summary: 
+  link: /meet-our-elders/
+
+- title: Event Calendar
+  icon: calendar-week
+  summary: 
   link: /meet-our-elders/
 
 - title: External Links
