@@ -53,6 +53,14 @@
 @import "utilities/api";
 // scss-docs-end import-stack
 
+html {
+    background: url(/assets/img/background.webp) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 .hayate {
     font-family: hayate, sans-serif;
     font-weight: 400;
@@ -60,7 +68,7 @@
 }
 
 body {
-    background-color: rgb(0, 0, 128);
+    background-color: rgba(0, 0, 128, 0.25);
     color: white;
 }
 
@@ -75,7 +83,7 @@ body {
     font-family: hayate, sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: #590D13;
+    color: rgb(0,0,80);
     text-shadow: 3px 3px 6px #fff;
 }
 
