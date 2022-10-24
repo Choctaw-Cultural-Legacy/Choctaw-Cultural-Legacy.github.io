@@ -60,7 +60,8 @@
 }
 
 body {
-    background-color: #E8CAB5;
+    background-color: rgb(0, 0, 128);
+    color: white;
 }
 
 .bg-maroon {
@@ -85,8 +86,8 @@ body {
  .front-links > .col > a > .card {
      background: none;
      border: none;
-     color: black;
-     --bs-link-color: black;
+     color: white;
+     --bs-link-color: white;
  }
 
 .image-gallery > .col > img {
